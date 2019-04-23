@@ -78,11 +78,10 @@ try {
             String intoA = "insert into cs336db.Auction"
 					+ "(auction_id,winner,start_time,end_time,min_price,initial_price,increment_bid)"
 					+ "values(" +"'"+total+ "'"+ ","+
-								"'"+type+ "'"+ ","+
 								"'"+null+ "'"+ ","+
 								"'"+currdate+ "'"+ ","+
 								"'"+enddate+ "'"+ ","+
-								"'"+helpbid+ "'"+","+
+								"'"+helpbid+ "'"+ ","+
 								"'"+initial_price+"'"+","+
 								"'"+i_bid+ "'"
 					+ ")";
@@ -96,7 +95,7 @@ try {
             		+ "(username,auction_ID)" + "values("+"'"+user+ "'"+ ","+	"'"+total+ "'"
         					+ ")";
 			third.executeUpdate(intoB);
-			response.sendRedirect("successforPostedAndBid.jsp"); 
+			response.sendRedirect("successforPostedBid.jsp"); 
 			
 		}catch (SQLException e){
 			// TODO Auto-generated catch block
