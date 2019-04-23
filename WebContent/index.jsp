@@ -22,8 +22,6 @@
 
     <% if (session.getAttribute("user") == null) { 
     	response.sendRedirect("login.jsp");
-    	System.out.println(session.getAttribute("user"));
-    	System.out.println("Redirecting");
 
     		
     } else{ %>

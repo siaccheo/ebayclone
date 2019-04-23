@@ -48,12 +48,14 @@ while(resultSet.next()){
 <tr bgcolor="#DEB887">
 
 <td><%=resultSet.getString("item_ID") %></td>
-<td><%=resultSet.getString("atype") %></td>
 <td><%=resultSet.getString("distributor") %></td>
 <td><%=resultSet.getString("model") %></td>
 <td><%=resultSet.getString("COLOR") %></td>
 
 </tr>
+<tr><td><%=resultSet.getString("atype") %></td>
+</tr>
+<tr></tr>
 
 <% 
 }
